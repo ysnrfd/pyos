@@ -1,0 +1,64 @@
+{
+    "kernel": {
+        "name": "PyOS",
+        "version": "1.0.0",
+        "boot_message": "Welcome to PyOS - A UNIX-inspired Operating System Simulation"
+    },
+    "scheduler": {
+        "algorithm": "round_robin",
+        "quantum": 100,
+        "priority_levels": 10,
+        "enable_preemption": true
+    },
+    "memory": {
+        "total_memory": 67108864,
+        "page_size": 4096,
+        "max_processes": 256,
+        "max_memory_per_process": 16777216
+    },
+    "filesystem": {
+        "root_path": "/",
+        "max_file_size": 10485760,
+        "max_open_files": 1024,
+        "enable_journaling": true
+    },
+    "process": {
+        "max_pid": 32768,
+        "init_process": "init",
+        "zombie_timeout": 60,
+        "max_processes": 256
+    },
+    "security": {
+        "enable_sandbox": true,
+        "max_cpu_time_per_process": 3600,
+        "max_file_descriptors": 1024,
+        "allow_root_login": true
+    },
+    "logging": {
+        "level": "INFO",
+        "log_file": "/var/log/pyos.log",
+        "max_log_size": 1048576,
+        "console_output": true
+    },
+    "users": {
+        "default_user": "root",
+        "default_shell": "/bin/pysh",
+        "home_prefix": "/home"
+    },
+    "ipc": {
+        "max_pipes": 256,
+        "max_message_queues": 64,
+        "max_shared_memory_segments": 32,
+        "pipe_buffer_size": 65536
+    },
+    "shell": {
+        "prompt": "$ ",
+        "history_size": 1000,
+        "enable_autocomplete": true
+    },
+    "boot": {
+        "auto_start_services": ["filesystem", "process_manager", "memory_manager"],
+        "init_user": "root",
+        "run_level": 3
+    }
+}
