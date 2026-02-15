@@ -4,7 +4,6 @@
 
 ![PyOS Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.10+-green.svg)
-![License](https://img.shields.io/badge/license-MIT-orange.svg)
 ![Architecture](https://img.shields.io/badge/architecture-microkernel-purple.svg)
 
 **A complete, production-grade operating system simulation implemented entirely in Python 3.10+ using only the standard library.**
